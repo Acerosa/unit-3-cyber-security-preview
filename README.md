@@ -1,7 +1,5 @@
-# Unit 3 Cyber Security preview
+# Unit 3 Cyber Security Hub preview
 
-Isolated GitHub Pages preview for the Unit 3 Exam Practice review.
+Isolated staging preview. This is not the production Hub.
 
-This site is not the production Hub. It is built from review commit 28d29701104a137a904dff7b5b0fe7e500efbbec with Exam Practice enabled and talks only to the staging Supabase project.
-
-Do not merge this repository into the production Hub.
+It connects only to the staging Supabase project and is published here so Exam Practice can be tested without changing https://acerosa.github.io/unit-3-Cyber-Security-Hub/.
