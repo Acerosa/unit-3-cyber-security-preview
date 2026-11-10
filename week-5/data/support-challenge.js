@@ -1,0 +1,73 @@
+/**
+ * Week 5 support provisions and challenge activities.
+ */
+(function (global) {
+  'use strict';
+  if (typeof globalThis !== "undefined" && globalThis.__lpPublishedCurriculum) {
+    return;
+  }
+
+  global.Week5SupportChallenge = Object.freeze({
+    resourceId: 'week5-support-challenge',
+    scored: false,
+    title: 'Support, challenge and accessibility',
+    definitions: Object.freeze({
+      loss:
+        'Something of value is taken, damaged, corrupted, reduced or no longer trusted.',
+      disruption:
+        'A service, process or operation stops, slows or becomes unreliable for people who depend on it.',
+      safety:
+        'People are placed at physical risk, or physical harm becomes more likely, because of the cyber incident.'
+    }),
+    gridSupport: Object.freeze({
+      title: 'Grid and classification support',
+      points: Object.freeze([
+        'Complete the stakeholder grid yourself. No row is filled in for you.',
+        'Keep the loss, disruption and safety checklist visible.',
+        'Classification can be completed with a keyboard.'
+      ])
+    }),
+    writingSupport: Object.freeze({
+      title: 'What a stronger impact answer includes',
+      frame: Object.freeze([
+        'Name the stakeholder.',
+        'State the consequence.',
+        'Use evidence from the scenario.',
+        'Say whether the consequence is immediate, longer term, or both.'
+      ]),
+      note: 'Use these as a checklist. You do not need to copy a set phrase.'
+    }),
+    accessibility: Object.freeze({
+      title: 'Universal design and accessibility',
+      points: Object.freeze([
+        'Concise written explanations, visual grids and structured analysis are all supported.',
+        'Reasoning can be recorded in writing or in the structured grid.',
+        'Full keyboard operation and visible focus states are required.',
+        'Do not communicate information by colour alone.',
+        'Instructions remain visible beside complex grids.',
+        'Errors explain how to improve.',
+        'Reduced-motion preferences are respected in CSS where animations exist.'
+      ])
+    }),
+    challenges: Object.freeze([
+      Object.freeze({
+        id: 'challenge-1',
+        title: 'Challenge 1: ranking impacts for Northbank',
+        prompt:
+          'Rank financial, reputational and safety impacts by how damaging each would be to Northbank Community Health Partnership specifically. Justify your ranking and respond to one counterargument.'
+      }),
+      Object.freeze({
+        id: 'challenge-2',
+        title: 'Challenge 2: organisation comparison',
+        prompt:
+          'Compare how the same ransomware incident would affect Northbank Community Health Partnership and a national infrastructure provider. Explain why the organisation’s size and purpose change the impact.'
+      }),
+      Object.freeze({
+        id: 'challenge-3',
+        title: 'Challenge 3: reasoned cost estimate',
+        prompt:
+          'Create a reasoned classroom cost estimate for the Northbank incident under recovery, regulatory consequences, lost trade or lost service, and insurance. State which estimate is hardest to defend and why. These are reasoned approximations, not factual Northbank figures.'
+      })
+    ])
+  });
+})(window);
